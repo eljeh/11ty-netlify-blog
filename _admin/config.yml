@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: master # Branch to update
-media_folder: '_site/images/uploads' #Live image Uploads
-public_folder: '/images/uploads' #prebuild image Uploads
+media_folder: 'dist/_uploads/images' #Live image Uploads
+public_folder: '/uploads/images' #prebuild image Uploads
 collections:
   - name: 'posts' #Name of tcollection to match posts.json file's tag
     label: 'Posts' #CMS collection name
@@ -10,7 +10,12 @@ collections:
     create: true #Can a new posts be created
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' #this sets the URL for the post
     fields: #What fields are displayed to edit the post
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'layouts/post.njk'} #Layout option
+      - {
+          label: 'Layout',
+          name: 'layout',
+          widget: 'hidden',
+          default: 'layouts/post.njk',
+        } #Layout option
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'date', default: '' }

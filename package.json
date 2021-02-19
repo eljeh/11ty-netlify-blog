@@ -1,0 +1,26 @@
+{
+  "name": "edbastarache.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^9.8.6",
+    "cssnano": "^4.1.10",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.2.6",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "sass  --no-source-map --watch src/_assets/sass:dist/assets/styles",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass  --no-source-map src/_assets/sass:dist/assets/styles",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss dist/assets/styles/*.css -u autoprefixer cssnano -r --no-map",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy"
+  },
+  "author": "Ed Bastarache"
+}
