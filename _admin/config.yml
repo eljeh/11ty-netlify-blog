@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update
 media_folder: 'dist/_uploads/images' #Live image Uploads
-public_folder: '/uploads/images' #prebuild image Uploads
+public_folder: '/_uploads/images' #prebuild image Uploads
 collections:
   - name: 'posts' #Name of collection to match posts.json file's tag
     label: 'Posts' #CMS collection name
