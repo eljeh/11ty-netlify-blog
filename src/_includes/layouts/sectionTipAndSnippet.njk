@@ -1,0 +1,16 @@
+<section id="tipsAndSnippets" role="contentinfo" aria-label="Tips And Snippets" class="py-md px-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	Tips & Snippets
+        <small> - Coming Soon!</small>
+    </h2>
+    <p>This will be a section for discussing UI Tips & Snippets.</p>
+    <a href="#">View All Articles</a>
+    <div class="row-wrap">
+        {% set postslist = collections.tips %}
+        {%- for post in postslist %}  
+            {% include "components/showCaseCard.njk" %}
+        {% endfor -%}
+    </div>
+
+</section>

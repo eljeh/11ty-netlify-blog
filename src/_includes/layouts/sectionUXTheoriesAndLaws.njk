@@ -1,0 +1,16 @@
+<section id="uxTheoriesAndLaws" role="contentinfo" aria-label="uxTheoriesAndLaws" class="py-md px-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	UX Theories & Laws
+        <small> - Coming Soon!</small>
+    </h2>
+    <p>This will be a section for UX Theories & Laws and some examples.</p>
+    <a href="#">View All Articles</a>
+    <div class="row-wrap">
+        {% set postslist = collections.ux %}
+        {%- for post in postslist %}  
+            {% include "components/showCaseCard.njk" %}
+        {% endfor -%}
+    </div>
+
+</section>

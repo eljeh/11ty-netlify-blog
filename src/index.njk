@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: pages/_base.njk
 permalink: /
 tags: rootpage
 pageTitle : Home
@@ -9,5 +9,9 @@ pageKeywords : UX, UI, Web Design, Web Dev, Front-end
 
 <h1>{{pageTitle}}</h1>
 
-Hello! Welcome to the Eleventy + Netlify from scratch homepage.
+
+{% include "layouts/sectionUXTheoriesAndLaws.njk" %}
+{% include "layouts/sectionDesignSystems.njk" %}
+{% include "layouts/sectionShowCasedWork.njk" %}
+{% include "layouts/sectionContactMe.njk" %}
 

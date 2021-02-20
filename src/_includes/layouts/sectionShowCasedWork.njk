@@ -1,0 +1,16 @@
+<section id="showcasedWork" role="contentinfo" aria-label="Showcased Work" class="py-md px-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	Showcased Work
+        <small> - Coming Soon!</small>
+    </h2>
+    <p>This will be a section for Showcasing UX/UI work.</p>
+    <a href="#">View All Articles</a>
+    <div class="row-wrap">
+        {% set postslist = collections.showcased %}
+        {%- for post in postslist %}  
+            {% include "components/showCaseCard.njk" %}
+        {% endfor -%}
+    </div>
+
+</section>

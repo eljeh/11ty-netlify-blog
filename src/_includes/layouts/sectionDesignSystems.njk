@@ -1,0 +1,19 @@
+<section id="designSystems" role="contentinfo" aria-label="Design Systems" class="py-md px-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	Design Systems
+        <small> - Coming Soon!</small>
+    </h2>
+
+    <p>This will be a section for discussing Design Systems and work-flow.</p>
+    
+    <a href="#">View All Articles</a>
+
+    <div class="row-wrap">
+        {% set postslist = collections.designsystem %}
+        {%- for post in postslist %}  
+            {% include "components/showCaseCard.njk" %}
+        {% endfor -%}
+    </div>
+
+</section>

@@ -1,12 +1,14 @@
-<section id="layouts.sectionID" class="p-lg">
+<section id="portfolio" role="contentinfo" aria-label="Portfolio" class="py-md px-lg">
 
     <h2 class="section-title mt-lg mb-sm">
-    	title
-    	<small>subtitle</small>
+    	Portfolio
+        <small> - Coming Soon!</small>
     </h2>
 
+    <p>This will be a section for most of my work throughout the years.</p>
+<a href="#">View All Articles</a>
     <div class="row-wrap">
-        {% set postslist = collections.posts %}
+        {% set postslist = collections.portfolio %}
         {%- for post in postslist %}  
             {% include "components/showCaseCard.njk" %}
         {% endfor -%}

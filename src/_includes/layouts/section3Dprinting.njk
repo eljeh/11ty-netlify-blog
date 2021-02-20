@@ -1,0 +1,19 @@
+<section id="3DPrinting" role="contentinfo" aria-label="3D Printing" class="py-md px-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	3D Printing
+        <small> - Coming Soon!</small>
+    </h2>
+
+    <p>This will be a section for discussing 3D Printing.</p>
+
+    <a href="#">View All Articles</a>
+
+    <div class="row-wrap">
+        {% set postslist = collections.3dprinting %}
+        {%- for post in postslist %}  
+            {% include "components/showCaseCard.njk" %}
+        {% endfor -%}
+    </div>
+
+</section>

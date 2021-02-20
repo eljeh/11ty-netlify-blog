@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.njk
+layout: pages/_base.njk
 tags: rootpage
 permalink: /about-me/
 pageTitle : About Me
@@ -8,4 +8,16 @@ pageKeywords : about me keywords
 ---
 <h1>{{pageTitle}}</h1>
 
-{% include "components/postslist.njk" %}
+<section id="bio" role="contentinfo" aria-label="bio" class="p-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	Bio
+        <small> - Coming Soon!</small>
+    </h2>
+
+    <p>Stuff About me</p>
+
+</section>
+
+
+{% include "layouts/sectionContactMe.njk" %}
