@@ -18,7 +18,7 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/_assets/sass:dist/assets/styles",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss dist/assets/styles/*.css -u autoprefixer cssnano -r --no-map",
+    "postbuild": "postcss dist/assets/styles/*.css -u autoprefixer -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"
   },
