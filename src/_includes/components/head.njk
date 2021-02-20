@@ -6,11 +6,11 @@
 		<meta name="robots" content="index,follow">
 
 		<!-- Site Content -->
-		<title>{%- if title %}{{title}} | {% endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}</title>
+		<title>{%- if pageTitle %}{{pageTitle}} | {% endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}</title>
 		<meta name="theme-color" content="{{site.themeColor}}">
 		<meta name="apple-mobile-web-app-status-bar-style" content="{{site.themeColor}}">
-		<meta name="description" content="{{site.description}}">
-		<link name="keywords" content=""> 
+		<meta name="description" content="{{pageDiscription}}">
+		<link name="keywords" content="{{pageKeywords}}"> 
 				
 		<!-- Icons -->
 		<link rel="shortcut icon" href="{{site.favicon | url}}" type="image/x-icon">
@@ -18,16 +18,16 @@
 		<link rel="icon" href="{{site.icon192 | url}}" sizes="192x192" type="image/png">
 
 		<!-- Google / Search Engine -->
-		<meta itemprop="name" content="{%- if title %}{{title}} | {% endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}">
-		<meta itemprop="description" content="{{site.description}}">
+		<meta itemprop="name" content="{%- if pageTitle %}{{pageTitle}} | {% endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}">
+		<meta itemprop="description" content="{{pageDiscription}}">
 		<meta itemprop="image" content="{{site.thumbnail | url}}">
 		<meta name="publisher" content="{{site.publisher}}">
 		<meta name="google" content="notranslate">
 
 		<!-- Open Graph / Facebook -->
 		<meta property="og:url" content="{{site.url}}">
-		<meta property="og:title" content="{%- if title %}{{title}} | {%- endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}">
-		<meta property="og:description" content="{{site.description}}">
+		<meta property="og:title" content="{%- if pageTitle %}{{pageTitle}} | {%- endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}">
+		<meta property="og:description" content="{{pageDiscription}}">
 		<meta property="og:image" content="{{site.thumbnail | url}}">
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="en_CA">
@@ -35,6 +35,6 @@
 
 		<!-- Twitter -->
 		<meta name="twitter:url" content="{{site.url | url}}">
-		<meta name="twitter:title" content="{%- if title %}{{title}} | {%- endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}">
-		<meta name="twitter:description" content="{{site.description}}">
+		<meta name="twitter:title" content="{%- if pageTitle %}{{pageTitle}} | {%- endif %}{{site.name}}{%- if site.tagline %} - {{site.tagline}}{%- endif %}">
+		<meta name="twitter:description" content="{{pageDiscription}}">
 		<meta name="twitter:image:src" content="{{site.thumbnail | url}}">

@@ -3,7 +3,7 @@
   {% for post in postslist %}
     <li>
       <strong>
-        <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+        <a href="{{ post.url | url }}">{{ post.data.pageTitle }}</a>
       </strong>
       -
       <time datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>

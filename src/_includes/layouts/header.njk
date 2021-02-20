@@ -1,0 +1,19 @@
+<header class="header">
+	<div id="banner" class="banner">
+	
+		<input id="toggle" type="checkbox" class="navToggle">
+		<label for="toggle" class="menuToggle">
+				<span></span><span></span><span></span>
+		</label>
+
+		{% include "components/mainNav.njk" %}
+		<h1 class="banner-title">
+				{{site.name}}
+				{% if  site.tagline %}
+				<small>
+						{{site.tagline}}
+				</small>
+				{% endif %}
+		</h1>
+	</div>
+</header>

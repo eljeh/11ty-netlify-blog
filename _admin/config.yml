@@ -4,7 +4,7 @@ backend:
 media_folder: 'dist/_uploads/images' #Live image Uploads
 public_folder: '/uploads/images' #prebuild image Uploads
 collections:
-  - name: 'posts' #Name of tcollection to match posts.json file's tag
+  - name: 'posts' #Name of collection to match posts.json file's tag
     label: 'Posts' #CMS collection name
     folder: 'posts' #Folder where posts are
     create: true #Can a new posts be created
@@ -14,10 +14,10 @@ collections:
           label: 'Layout',
           name: 'layout',
           widget: 'hidden',
-          default: 'layouts/post.njk',
+          default: 'pages/post.njk',
         } #Layout option
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Title', name: 'pageTitle', widget: 'string' }
+      - { label: 'Description', name: 'pageDescription', widget: 'string' }
+      - { label: 'Hero Image', name: 'heroImage', widget: 'image' }
       - { label: 'Date', name: 'date', widget: 'date', default: '' }
       - { label: 'Post Body', name: 'body', widget: 'markdown' }
-      - { label: 'Featured Image', name: 'featuredImage', widget: 'image' }

@@ -1,0 +1,15 @@
+<section id="layouts.sectionID" class="p-lg">
+
+    <h2 class="section-title mt-lg mb-sm">
+    	title
+    	<small>subtitle</small>
+    </h2>
+
+    <div class="row-wrap">
+        {% set postslist = collections.posts %}
+        {%- for post in postslist %}  
+            {% include "components/showCaseCard.njk" %}
+        {% endfor -%}
+    </div>
+
+</section>

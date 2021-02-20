@@ -1,9 +1,8 @@
 ---
-layout: layouts/post.njk
-title: My first post
-description: The first post on the Eleventy + Netlify CMS from scratch blog
+pageTitle: My First Post
+pageDiscription: This is my first post
+heroImage: http://placeimg.com/640/360/any
 date: 2020-04-18
-featuredImage: /_uploads/images/image1.jpg
 ---
 
 Hello, here is the body of the post.

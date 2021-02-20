@@ -1,0 +1,12 @@
+<nav>
+	<ul class="navList">
+  {% set rootpages = collections.rootpage %}
+  {% for page in rootpages %}
+    <li class="navItem">
+        <a href="{{ page.url | url }}">
+					{{ page.data.pageTitle }}
+				</a>
+    </li>
+  {% endfor %}
+	</ul>
+</nav>
