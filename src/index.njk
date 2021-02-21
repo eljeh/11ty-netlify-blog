@@ -6,12 +6,22 @@ pageTitle : Home
 pageDiscription : Home Page Discription
 pageKeywords : UX, UI, Web Design, Web Dev, Front-end
 ---
+<section id="intro"  role="contentinfo" aria-label="introduction" class="py-md px-lg">
+	<h1>Ed Bastarache - <small>UX/UI designer</small></h1>
+	<p class="py-sm">
+		Spicy jalapeno bacon ipsum dolor amet turducken magna pork chop nisi tenderloin ut. Flank laboris picanha, pork frankfurter officia jowl short loin anim ut ut prosciutto eu porchetta tongue. Do velit picanha shankle alcatra nisi. Consequat ex filet mignon, sed prosciutto sausage pastrami.
+	</p>
+	<p class="py-sm">
+		Tempor landjaeger enim commodo alcatra in pork loin. Ut kevin picanha short loin tenderloin pariatur dolore. Sausage cupidatat duis, aute labore ribeye ullamco pig porchetta ball tip pork loin tenderloin in nulla doner. T-bone sed spare ribs ipsum turducken, prosciutto sausage buffalo tail labore.
+	</p>
+</section>
+<section id="" role="contentinfo" aria-label="" class="py-md px-lg">
+		{%- for post in collections.featured %}  
+				{% include "components/featuredContent.njk" %}
+		{% endfor -%}
+</section>
 
-<h1>{{pageTitle}}</h1>
-
-
-{% include "layouts/sectionUXTheoriesAndLaws.njk" %}
-{% include "layouts/sectionDesignSystems.njk" %}
 {% include "layouts/sectionShowCasedWork.njk" %}
+
 {% include "layouts/sectionContactMe.njk" %}
 

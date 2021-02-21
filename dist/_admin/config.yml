@@ -4,9 +4,9 @@ backend:
 media_folder: 'dist/_uploads/images' #Live image Uploads
 public_folder: '/_uploads/images' #prebuild image Uploads
 collections:
-  - name: 'posts' #Name of collection to match posts.json file's tag
+  - name: 'post' #Collection name that matches the .json tags
     label: 'Posts' #CMS collection name
-    folder: 'posts' #Folder where posts are
+    folder: 'posts' #Folder where posts live
     create: true #Can a new posts be created
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}' #this sets the URL for the post
     fields: #What fields are displayed to edit the post

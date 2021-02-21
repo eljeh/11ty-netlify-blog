@@ -17,6 +17,14 @@ pageKeywords : about me keywords
 
     <p>Stuff About me</p>
 
+    {% set postslist = collections.post %}
+    <ul>
+    {%- for post in postslist %}
+        <li class="py-sm">
+        {% include "components/postlist.njk" %}
+        </li>
+    {% endfor -%}
+    </ul>
 </section>
 
 

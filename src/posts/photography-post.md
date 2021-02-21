@@ -1,9 +1,9 @@
 ---
-pageTitle: My photography Post
+pageTitle: My First photography Post
 pageDiscription: This is my photography post, this is just a placeholder post!
 heroImage: /_uploads/images/pexels-alexander-dummer-134469.jpg
 date: 2020-04-18
-tags: [posts, photography]
+tags: [post, photography]
 ---
 
 ##This is just a placeholder post!

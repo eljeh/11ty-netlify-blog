@@ -1,9 +1,9 @@
 ---
-pageTitle: My portfolio & is ShowcCased Post
+pageTitle: My First portfolio & is ShowcCased Post
 pageDiscription: This is my portfolio post, this is just a placeholder post!
 heroImage: /_uploads/images/pexels-mathias-pr-reding-6243500.jpg
 date: 2020-04-18
-tags: [posts, portfolio, showcased]
+tags: [post, portfolio, showcased]
 ---
 
 ##This is just a placeholder post!

@@ -1,9 +1,9 @@
 ---
-pageTitle: My UXUI Post
+pageTitle: My Second UXUI Post
 pageDiscription: This is my UXUI post, this is just a placeholder post!
 heroImage: /_uploads/images/pexels-picjumbocom-196646.jpg
 date: 2020-04-18
-tags: [posts, ux]
+tags: [post, ux]
 ---
 
 ##This is just a placeholder post!

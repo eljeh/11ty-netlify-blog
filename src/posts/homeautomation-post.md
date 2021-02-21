@@ -1,9 +1,9 @@
 ---
-pageTitle: My Home Automation Post
+pageTitle: My First Home Automation Post
 pageDiscription: This is my Home Automation post, this is just a placeholder post!
 heroImage: /_uploads/images/pexels-anni-roenkae-2317711.jpg
 date: 2020-04-18
-tags: [posts, homeautomation]
+tags: [post, homeautomation]
 ---
 
 ##This is just a placeholder post!
