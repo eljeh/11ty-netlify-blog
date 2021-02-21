@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+
   eleventyConfig.addPassthroughCopy('_uploads');
   eleventyConfig.addPassthroughCopy('_admin');
 
@@ -25,4 +26,5 @@ module.exports = function (eleventyConfig) {
       output: "dist",
     }
   };
+
 };

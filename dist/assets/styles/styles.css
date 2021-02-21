@@ -462,7 +462,7 @@ a {
 .row-wrap {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 body {
@@ -956,7 +956,8 @@ footer .navItem a:hover .text {
 .showCase-Card picture {
   display: flex;
   min-width: 100%;
-  min-height: calc(calc(33vw - 5.284vw)*0.318);
+  min-height: calc(calc(33vw - 5.284vw) * 0.318);
+  max-height: 36vh;
   overflow: hidden;
   margin: 0 auto;
   justify-items: center;
@@ -996,5 +997,5 @@ footer .navItem a:hover .text {
   display: none;
 }
 .showCase-Card .card-header .tag-list .tag-item i {
-  font-size: calc(var(--fs-default) / calc(1.618*2));
+  font-size: calc(var(--fs-default) / calc(1.618 * 2));
 }

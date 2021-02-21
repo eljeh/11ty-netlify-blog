@@ -31,7 +31,8 @@
   picture {
     display: flex;
     min-width: 100%;
-    min-height: calc(calc(33vw - 5.284vw)*0.318);
+    min-height: calc(calc(33vw - 5.284vw) * 0.318);
+    max-height: 36vh;
     overflow: hidden;
     margin: 0 auto;
     justify-items: center;
@@ -44,7 +45,6 @@
       height: auto;
       transition: all 0.3s ease-in-out 0.25ms;
     }
-
   }
 
   .card-header {
@@ -77,12 +77,12 @@
         }
 
         i {
-          font-size: calc(var(--fs-default) / calc(1.618*2));
+          font-size: calc(var(--fs-default) / calc(1.618 * 2));
         }
       }
     }
   }
 
-  .card-body {}
-
+  .card-body {
+  }
 }
