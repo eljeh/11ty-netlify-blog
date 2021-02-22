@@ -12,11 +12,7 @@ collections:
     label: 'Posts' #CMS collection name
     folder: 'src/posts' #Folder where posts live
     create: true #Can a new posts be created
-<<<<<<< HEAD
     slug: '{{year}}-{{month}}-{{day}}-{{pageTitle}}' #this sets the URL for the post
-=======
-    slug: '{{pageTitle}}' #this sets the URL for the post
->>>>>>> c3c5e08e10ac56559e6e1df924bff6a66285e82a
     fields: #What fields are displayed to edit the post
       - {
           label: 'Layout',
