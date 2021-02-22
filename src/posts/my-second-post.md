@@ -1,7 +1,7 @@
 ---
 pageTitle: My Second Post
 pageDiscription: This is my Second post, this is just a placeholder post!
-heroImage: /_uploads/images/pexels-anni-roenkae-2317711.jpg
+heroImage: /uploads/images/pexels-anni-roenkae-2317711.jpg
 date: 2020-04-18
 ---
 

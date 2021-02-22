@@ -1,7 +1,7 @@
 ---
 pageTitle: My Second Design System Post
 pageDiscription: This is my Design System post, this is just a placeholder post!
-heroImage: /_uploads/images/pexels-anni-roenkae-2317711.jpg
+heroImage: /uploads/images/pexels-anni-roenkae-2317711.jpg
 date: 2020-04-18
 tags: [post, designsystem]
 ---

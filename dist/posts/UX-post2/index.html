@@ -16,14 +16,14 @@
 		<link name="keywords" content=""> 
 				
 		<!-- Icons -->
-		<link rel="shortcut icon" href="/_uploads/images/me.png" type="image/x-icon">
-		<link rel="apple-touch-icon" href="/_uploads/images/me.png" sizes="16x16" type="image/png">
-		<link rel="icon" href="/_uploads/images/me.png" sizes="192x192" type="image/png">
+		<link rel="shortcut icon" href="/uploads/images/me.png" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/uploads/images/me.png" sizes="16x16" type="image/png">
+		<link rel="icon" href="/uploads/images/me.png" sizes="192x192" type="image/png">
 
 		<!-- Google / Search Engine -->
 		<meta itemprop="name" content="My Second UXUI Post | edbastarache.com - allThings ed!">
 		<meta itemprop="description" content="This is my UXUI post, this is just a placeholder post!">
-		<meta itemprop="image" content="/_uploads/images/me.png">
+		<meta itemprop="image" content="/uploads/images/me.png">
 		<meta name="publisher" content="Ed Bastarache">
 		<meta name="google" content="notranslate">
 
@@ -31,7 +31,7 @@
 		<meta property="og:url" content="http://edbastarache.com">
 		<meta property="og:title" content="My Second UXUI Post |edbastarache.com - allThings ed!">
 		<meta property="og:description" content="This is my UXUI post, this is just a placeholder post!">
-		<meta property="og:image" content="/_uploads/images/me.png">
+		<meta property="og:image" content="/uploads/images/me.png">
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="en_CA">
 		<meta property="og:locale:alternate" content="en_FR">
@@ -40,7 +40,7 @@
 		<meta name="twitter:url" content="http://edbastarache.com">
 		<meta name="twitter:title" content="My Second UXUI Post |edbastarache.com - allThings ed!">
 		<meta name="twitter:description" content="This is my UXUI post, this is just a placeholder post!">
-		<meta name="twitter:image:src" content="/_uploads/images/me.png">
+		<meta name="twitter:image:src" content="/uploads/images/me.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/assets/styles/styles.css" />
@@ -85,7 +85,7 @@
 </header>
 
 		<main>
-      <img src="/_uploads/images/pexels-picjumbocom-196646.jpg" alt="/_uploads/images/pexels-picjumbocom-196646.jpg"></img>
+      <img src="/uploads/images/pexels-picjumbocom-196646.jpg" alt="/uploads/images/pexels-picjumbocom-196646.jpg"></img>
 <h2>My Second UXUI Post</h2>
 
 <h3>Posted: 18-04-20</h3>
@@ -127,5 +127,16 @@
     </nav>
 </footer>
 
+		<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
   </body>
 </html>

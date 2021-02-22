@@ -1,7 +1,7 @@
 ---
 pageTitle: My Second UXUI Post
 pageDiscription: This is my UXUI post, this is just a placeholder post!
-heroImage: /_uploads/images/pexels-picjumbocom-196646.jpg
+heroImage: /uploads/images/pexels-picjumbocom-196646.jpg
 date: 2020-04-18
 tags: [post, ux]
 ---

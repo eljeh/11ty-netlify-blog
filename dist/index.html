@@ -16,14 +16,14 @@
 		<link name="keywords" content="UX, UI, Web Design, Web Dev, Front-end"> 
 				
 		<!-- Icons -->
-		<link rel="shortcut icon" href="/_uploads/images/me.png" type="image/x-icon">
-		<link rel="apple-touch-icon" href="/_uploads/images/me.png" sizes="16x16" type="image/png">
-		<link rel="icon" href="/_uploads/images/me.png" sizes="192x192" type="image/png">
+		<link rel="shortcut icon" href="/uploads/images/me.png" type="image/x-icon">
+		<link rel="apple-touch-icon" href="/uploads/images/me.png" sizes="16x16" type="image/png">
+		<link rel="icon" href="/uploads/images/me.png" sizes="192x192" type="image/png">
 
 		<!-- Google / Search Engine -->
 		<meta itemprop="name" content="Home | edbastarache.com - allThings ed!">
 		<meta itemprop="description" content="Home Page Discription">
-		<meta itemprop="image" content="/_uploads/images/me.png">
+		<meta itemprop="image" content="/uploads/images/me.png">
 		<meta name="publisher" content="Ed Bastarache">
 		<meta name="google" content="notranslate">
 
@@ -31,7 +31,7 @@
 		<meta property="og:url" content="http://edbastarache.com">
 		<meta property="og:title" content="Home |edbastarache.com - allThings ed!">
 		<meta property="og:description" content="Home Page Discription">
-		<meta property="og:image" content="/_uploads/images/me.png">
+		<meta property="og:image" content="/uploads/images/me.png">
 		<meta property="og:type" content="website">
 		<meta property="og:locale" content="en_CA">
 		<meta property="og:locale:alternate" content="en_FR">
@@ -40,7 +40,7 @@
 		<meta name="twitter:url" content="http://edbastarache.com">
 		<meta name="twitter:title" content="Home |edbastarache.com - allThings ed!">
 		<meta name="twitter:description" content="Home Page Discription">
-		<meta name="twitter:image:src" content="/_uploads/images/me.png">
+		<meta name="twitter:image:src" content="/uploads/images/me.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="/assets/styles/styles.css" />
@@ -105,7 +105,7 @@
 		</h3>
 		<div>
 			<picture>
-					<img src="/_uploads/images/pexels-picjumbocom-196644.jpg" loading="lazy" width="50%" height="auto" alt="">
+					<img src="/uploads/images/pexels-picjumbocom-196644.jpg" loading="lazy" width="50%" height="auto" alt="">
 			</picture>
 			<p>
 				This is my UXUI post, this is just a placeholder post!
@@ -130,7 +130,7 @@
             <article class="showCase-Card">
 		<a href="/posts/portfolio-post/">
 				<picture>
-						<img src="/_uploads/images/pexels-mathias-pr-reding-6243500.jpg" loading="lazy" width="100%" height="auto" alt="">
+						<img src="/uploads/images/pexels-mathias-pr-reding-6243500.jpg" loading="lazy" width="100%" height="auto" alt="">
 				</picture>
 				<div class="card-header">
 						<h3 class="card-title">
@@ -151,7 +151,7 @@
             <article class="showCase-Card">
 		<a href="/posts/portfolio-post2/">
 				<picture>
-						<img src="/_uploads/images/pexels-mathias-pr-reding-6243500.jpg" loading="lazy" width="100%" height="auto" alt="">
+						<img src="/uploads/images/pexels-mathias-pr-reding-6243500.jpg" loading="lazy" width="100%" height="auto" alt="">
 				</picture>
 				<div class="card-header">
 						<h3 class="card-title">
@@ -172,7 +172,7 @@
             <article class="showCase-Card">
 		<a href="/posts/portfolio-post3/">
 				<picture>
-						<img src="/_uploads/images/pexels-mathias-pr-reding-6243500.jpg" loading="lazy" width="100%" height="auto" alt="">
+						<img src="/uploads/images/pexels-mathias-pr-reding-6243500.jpg" loading="lazy" width="100%" height="auto" alt="">
 				</picture>
 				<div class="card-header">
 						<h3 class="card-title">
@@ -201,7 +201,17 @@
         <small> - Coming Soon!</small>
     </h2>
 
-    <p>Contact form</p>
+    <form name="contact" netlify>
+        <p>
+            <label>Name <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
 </section>
 
 
@@ -239,5 +249,16 @@
     </nav>
 </footer>
 
+		<script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
   </body>
 </html>

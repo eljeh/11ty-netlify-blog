@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
 
-  eleventyConfig.addPassthroughCopy('_uploads');
-  eleventyConfig.addPassthroughCopy('_admin');
+  eleventyConfig.addPassthroughCopy('uploads');
+  eleventyConfig.addPassthroughCopy('admin');
 
   const {
     DateTime

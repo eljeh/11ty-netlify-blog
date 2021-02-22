@@ -1,7 +1,7 @@
 ---
 pageTitle: My Second 3dprinting Post
 pageDiscription: This is my 3dprinting post, this is just a placeholder post!
-heroImage: /_uploads/images/pexels-mathias-pr-reding-6243500.jpg
+heroImage: /uploads/images/pexels-mathias-pr-reding-6243500.jpg
 date: 2020-04-18
 tags: [post, 3dprinting]
 ---

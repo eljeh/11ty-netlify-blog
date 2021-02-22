@@ -1,7 +1,7 @@
 ---
 pageTitle: My Second Tips Post
 pageDiscription: This is my Tips post, this is just a placeholder post!
-heroImage: /_uploads/images/pexels-pixabay-270404.jpg
+heroImage: /uploads/images/pexels-pixabay-270404.jpg
 date: 2020-04-18
 tags: [post, tips]
 ---
